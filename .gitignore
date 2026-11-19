@@ -1,0 +1,70 @@
+# ---- Clinical data: NEVER commit (TriNetX data use agreement / HIPAA) ----
+# Original notebooks (patient-level saved outputs) and original README (extract figures): local only.
+# Public copies (code + markdown, no outputs) live in notebooks/sanitized/.
+AKI_Dialysis_Prediction-main/
+# Local-only publication rules and extract-specific reference values
+local/
+# Progress report: contains a fellow student's results and extract-derived counts; local until publication is cleared.
+docs/Progress report.docx
+data/
+*.csv
+*.csv.gz
+*.parquet
+*.feather
+*.duckdb
+*.duckdb.wal
+*.sqlite
+*.db
+# patient-level outputs (predictions, sequences, cohort extracts, attention dumps)
+outputs/
+exports/
+cohort*/
+predictions*/
+*_patients.*
+*_sequences.*
+# Data-derived reports (aggregates can still carry small-cell counts; review before sharing)
+reports/
+# Local PostgreSQL data directory (pgserver / initdb)
+.pgdata/
+pgdata/
+
+# ---- Credentials ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials*.json
+
+# ---- Model checkpoints / experiment tracking ----
+*.pt2
+cpp/build/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.keras
+*.onnx
+*.safetensors
+mlruns/
+mlartifacts/
+
+# ---- Python / tooling ----
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# ---- Frontend (future phase) ----
+node_modules/
+dist/
+
+# ---- OS ----
+.DS_Store
+
+# ---- Local tool config ----
+.claude/

@@ -1,0 +1,287 @@
+{
+ "source_dir": "AKI_Dialysis_Prediction-main",
+ "policy": "all saved outputs removed; sources kept except logged placeholder rewrites (personal paths, local publication rules, markdown figures)",
+ "patient_id_check": true,
+ "notebooks": {
+  "AKI_Project.ipynb": {
+   "outputs_removed": 80,
+   "code_cells": 89,
+   "markdown_cells": 15,
+   "rewrites": [
+    {
+     "cell": 27,
+     "type": "code",
+     "local_rule": 1
+    },
+    {
+     "cell": 35,
+     "type": "markdown",
+     "local_rule": 1
+    },
+    {
+     "cell": 65,
+     "type": "code",
+     "local_rule": 1
+    },
+    {
+     "cell": 71,
+     "type": "markdown",
+     "local_rule": 1
+    },
+    {
+     "cell": 76,
+     "type": "markdown",
+     "figure": 4
+    }
+   ],
+   "source_flags": [
+    {
+     "cell": 9,
+     "date": false,
+     "id_like_tokens": 1
+    },
+    {
+     "cell": 24,
+     "date": false,
+     "id_like_tokens": 1
+    },
+    {
+     "cell": 60,
+     "date": false,
+     "id_like_tokens": 1
+    }
+   ]
+  },
+  "RETAIN_NoLabs.ipynb": {
+   "outputs_removed": 85,
+   "code_cells": 102,
+   "markdown_cells": 15,
+   "rewrites": [
+    {
+     "cell": 1,
+     "type": "code",
+     "path": 1
+    },
+    {
+     "cell": 27,
+     "type": "code",
+     "local_rule": 1
+    },
+    {
+     "cell": 36,
+     "type": "markdown",
+     "local_rule": 1
+    },
+    {
+     "cell": 46,
+     "type": "code",
+     "local_rule": 1
+    },
+    {
+     "cell": 63,
+     "type": "markdown",
+     "local_rule": 1
+    },
+    {
+     "cell": 68,
+     "type": "markdown",
+     "figure": 4
+    },
+    {
+     "cell": 94,
+     "type": "code",
+     "local_rule": 1
+    }
+   ],
+   "source_flags": [
+    {
+     "cell": 9,
+     "date": false,
+     "id_like_tokens": 1
+    },
+    {
+     "cell": 24,
+     "date": false,
+     "id_like_tokens": 1
+    },
+    {
+     "cell": 88,
+     "date": false,
+     "id_like_tokens": 1
+    }
+   ]
+  },
+  "RETAIN_WithLabs.ipynb": {
+   "outputs_removed": 88,
+   "code_cells": 105,
+   "markdown_cells": 16,
+   "rewrites": [
+    {
+     "cell": 1,
+     "type": "code",
+     "path": 1
+    },
+    {
+     "cell": 27,
+     "type": "code",
+     "local_rule": 1
+    },
+    {
+     "cell": 36,
+     "type": "markdown",
+     "local_rule": 1
+    },
+    {
+     "cell": 46,
+     "type": "code",
+     "local_rule": 1
+    },
+    {
+     "cell": 63,
+     "type": "markdown",
+     "local_rule": 1
+    },
+    {
+     "cell": 68,
+     "type": "markdown",
+     "figure": 4
+    },
+    {
+     "cell": 97,
+     "type": "code",
+     "local_rule": 1
+    }
+   ],
+   "source_flags": [
+    {
+     "cell": 9,
+     "date": false,
+     "id_like_tokens": 1
+    },
+    {
+     "cell": 24,
+     "date": false,
+     "id_like_tokens": 1
+    },
+    {
+     "cell": 91,
+     "date": false,
+     "id_like_tokens": 1
+    }
+   ]
+  },
+  "Transformer_NoLabs.ipynb": {
+   "outputs_removed": 87,
+   "code_cells": 99,
+   "markdown_cells": 15,
+   "rewrites": [
+    {
+     "cell": 1,
+     "type": "code",
+     "path": 1
+    },
+    {
+     "cell": 27,
+     "type": "code",
+     "local_rule": 1
+    },
+    {
+     "cell": 36,
+     "type": "markdown",
+     "local_rule": 1
+    },
+    {
+     "cell": 46,
+     "type": "code",
+     "local_rule": 1
+    },
+    {
+     "cell": 63,
+     "type": "markdown",
+     "local_rule": 1
+    },
+    {
+     "cell": 68,
+     "type": "markdown",
+     "figure": 4
+    },
+    {
+     "cell": 94,
+     "type": "code",
+     "local_rule": 1
+    }
+   ],
+   "source_flags": [
+    {
+     "cell": 9,
+     "date": false,
+     "id_like_tokens": 1
+    },
+    {
+     "cell": 24,
+     "date": false,
+     "id_like_tokens": 1
+    }
+   ]
+  },
+  "Transformer_WithLabs.ipynb": {
+   "outputs_removed": 98,
+   "code_cells": 106,
+   "markdown_cells": 16,
+   "rewrites": [
+    {
+     "cell": 1,
+     "type": "code",
+     "path": 1
+    },
+    {
+     "cell": 28,
+     "type": "code",
+     "local_rule": 1
+    },
+    {
+     "cell": 37,
+     "type": "markdown",
+     "local_rule": 1
+    },
+    {
+     "cell": 47,
+     "type": "code",
+     "local_rule": 1
+    },
+    {
+     "cell": 64,
+     "type": "markdown",
+     "local_rule": 1
+    },
+    {
+     "cell": 69,
+     "type": "markdown",
+     "figure": 4
+    },
+    {
+     "cell": 80,
+     "type": "code",
+     "path": 1
+    },
+    {
+     "cell": 101,
+     "type": "code",
+     "local_rule": 1
+    }
+   ],
+   "source_flags": [
+    {
+     "cell": 10,
+     "date": false,
+     "id_like_tokens": 1
+    },
+    {
+     "cell": 25,
+     "date": false,
+     "id_like_tokens": 1
+    }
+   ]
+  }
+ }
+}
