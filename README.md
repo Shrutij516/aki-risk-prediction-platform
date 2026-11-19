@@ -1,15 +1,28 @@
-# AKI → dialysis risk: reconstruction
+# AKI risk prediction platform
 
-This repository reconstructs, in November 2026, a Spring 2026 research project that predicts ESRD or dialysis within 2 years of an acute kidney injury (AKI) from EHR event sequences. The original project was done for AMS 585 (Internship in Data Science) at Stony Brook University, supervised by Dr. Alisa Yurovsky.
+An independent engineering platform for predicting ESRD or dialysis within 2 years of an acute kidney injury (AKI) from EHR event sequences. It is built on a supervised academic research project and extends it.
 
-| | What | When |
+## Two separate pieces of work
+
+| | Supervised academic research | Independent engineering extension (this repository) |
 |---|---|---|
-| **Original research** | TensorFlow/Keras Colab notebooks: cohort, event tokens, kidney-lab investigation and severity binning, Transformer and RETAIN with focal loss, compared against a prior student researcher's reported results (a methodological reference only; see PROVENANCE.md). Public copies in `notebooks/sanitized/` contain code and markdown only | Spring 2026 |
-| **Reconstruction (AI-assisted)** | PostgreSQL schema and ingestion; an SQL cohort that reproduces the notebooks' cohort counts (checked locally); PyTorch re-implementations of RETAIN and the Transformer, with MLflow tracking and validation-only selection; a FastAPI + React/JavaScript dashboard; C++ (LibTorch) inference; a subgroup evaluation | 2026-11-17 → 11-19 |
-| **Synthetic demo** | Invented patients that run through the real pipeline code, for demos and tests | generated on demand |
-| **Real-data evaluation** | Held-out metrics and the subgroup report of the reconstructed models on the TriNetX extract | local only, not in this repo |
+| **What** | TensorFlow/Keras Colab notebooks: AKI cohort and 2-year ESRD/dialysis label, event tokenisation, an investigation of kidney laboratory results with clinical severity binning, Transformer and RETAIN models with focal loss, compared against a prior student researcher's reported results (a methodological reference only; see [PROVENANCE.md](PROVENANCE.md)) | PostgreSQL schema and ingestion; an SQL cohort checked against the notebooks' cohort counts; PyTorch re-implementations of RETAIN and the Transformer, with MLflow tracking and validation-only model selection; a FastAPI + React/JavaScript dashboard; C++ (LibTorch) inference; a subgroup evaluation |
+| **When** | Spring 2026 | November 2026 |
+| **Context** | AMS 585 (Internship in Data Science), Stony Brook University, supervised by Dr. Alisa Yurovsky | Done by the author independently, after the course, with an AI coding assistant (Claude Code) working under the author's direction and review |
+| **Where** | [Shrutij516/AKI_Dialysis_Prediction](https://github.com/Shrutij516/AKI_Dialysis_Prediction) | This repository |
 
-**[PROVENANCE.md](PROVENANCE.md)** lists every file by category. The reconstruction code was written with an AI coding assistant (Claude Code) under the author's direction. The reconstructed models' results are new results, not reproductions of the original numbers. Nothing here has been validated for clinical use.
+**How the two relate:**
+- The academic repository is the record of the supervised research, and it is kept separate and unchanged.
+- This repository re-implements that pipeline and builds a platform around it.
+- It also contains public copies of the original notebooks (`notebooks/sanitized/`, code and markdown only) as a reference.
+- Results from this repository's models are **new results**, not reproductions of the academic results: different framework, validation-only selection, training-only vocabulary.
+- Nothing here has been validated for clinical use.
+
+What else is here:
+- **Synthetic demo:** invented patients that run through the real pipeline code, for demos and tests. Generated on demand; no synthetic data is committed.
+- **Real-data evaluation:** held-out metrics and the subgroup report for the extension's models on the restricted TriNetX extract. These stay on the author's machine and are not in this repository.
+
+[PROVENANCE.md](PROVENANCE.md) lists every file by category.
 
 ## Quick start: synthetic demo (no real data needed)
 
